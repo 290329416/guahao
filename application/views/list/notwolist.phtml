@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base target="_blank">
+<title><?=$catid['title']?></title>
+<meta name="keywords" content="<?=$catid['keyword']?>"/>
+<meta name="description" content="<?=$catid['description']?>"/>
+<link href="<?=IMGURL?>static/home/css/style_s.css" rel="stylesheet" type="text/css" />
+<link href="<?=IMGURL?>static/home/css/shlist.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<?=IMGURL?>static/home/css/tpynx_con_list_1011.css"/>
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/jquery-1.8.3.min.js"></script>
+<script src="<?=IMGURL?>static/home/js/iplookup.js"></script>
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/lower.js"></script>
+<script src="http://guahao.health.sohu.com/static/home/js/a.js" type="text/javascript"></script>
+<style>
+.lb-1r p  .ksxqlist_a{ color:#1390c7; background:#e1eff9; }
+.lb-1r p  .del_style{width:0px; }
+.mh-tip{color:#999;padding-top:5px;}
+.mh-tip2{padding-bottom:5px;text-align: center; color: #FF0000;font-size:14px;line-height:20px;}
+.top{ background:#f0ebef; height:23px; margin-top:5px;}
+.lftop{ float:left;}
+.rftop{ float:right; padding-right:10px;}
+.rftop ul a{ height:23px; line-height:23px; margin-left:1px; margin-right:1px;}
+</style> 
+</head>
+<body>
+  
+<!--head-->
+<script src="<?=BASEURL?>static/home/js/header.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?=BASEURL?>static/home/js/nav.js"></script>
+<!--end head-->
+<p class="clr"></p>
+<!--main-->
+<div class="main">
+<?php Yaf_Loader::import(PATH_VIEW . '/include/liucheng.phtml');?>
+<p class="clr"></p>
+
+<div class="nav1" style="background-color: #CFEDF8;">
+<p>
+<?php foreach($navlist as $v){?>
+<a href="<?=BASEURL?><?=$v['catpath']?>/"><?=$v['catname']?></a>
+<?php } ?>
+</p>
+</div>
+<!-- <div class="ss"><strong>热门搜索：</strong><a href="/dianxian/">癫痫病能治愈吗</a><a href="/dianxian/">癫痫病的最新治疗方法</a><a href="/dianxian/">癫痫病可以治愈吗</a><a href="/dianxian/dxzz/">癫痫病的早期症状</a><a href="/dianxian/dxby/">癫痫病是怎么引起的</a><a href="/dianxian/zzzl/">癫痫病的治疗</a></div>-->
+<div class="content">
+		<div class="con_l">
+			<div class="dqwz">
+				<span>您现在所在的位置：</span><a href="/<?=$catid['catpath']?>/"><?=$catid['catname']?><?=$catid['catname']?></a></div>
+			<div class="wzlb">
+				<div class="tjwz">
+					<div class="tj_1">
+						<h1><p style="margin-top:0;"><a><?=$catid['catname']?></a></p></h1>
+						<span>本栏目为您介绍<a href="/<?=$catid['catpath']?>/" Title="<?=$catid['catname']?>" ><?=$catid['catname']?></a>，详细“<?=$catid['catname']?>”信息请阅读以下文章内容，也可以在线联系我们专家！</span>
+						<ul>
+							<?php foreach($article as $k=>$v){?>
+								<? if($k<4){?>
+									<li><a href="/<?=$catid['catpath']?>/<?=$v['id']?>.html"><?=$v['title']?></a></li>
+								<?php } ?>
+							<?php } ?>
+						</ul>
+					</div>
+				</div>
+				<div class="bzbk">
+					<h3>病种百科</h3>
+					<div class="bz_c">
+						<ul>
+						<li>
+						<?php foreach($article as $k=>$v){?>
+								<? if($k>=4 && $k<8){?>
+									<a href="/<?=$catid['catpath']?>/<?=$v['id']?>.html"><?=$v['title']?></a>|
+								<?php } ?>
+						<?php } ?>
+						</li>
+						<li>
+						<?php foreach($article as $k=>$v){?>
+								<? if($k>=8){?>
+									<a href="/<?=$catid['catpath']?>/<?=$v['id']?>.html"><?=$v['title']?></a>|
+								<?php } ?>
+						<?php } ?>
+						</li></ul>
+					</div>
+				</div>
+				<ul class="ul">
+					<?php foreach($conlist as $k=>$v){ ?>
+					<li><span><a href="<?=$v['url']?>"><?=$v['title']?></a></span><?php echo date('Y.m.d',$v['inputtime']);?></li>
+						<?php if((0 == ($k+1)%6) || $k == (count($conlist)-1)){?>
+							<li class="bor"></li>
+						<?php }?>
+					<?php } ?>
+				</ul>
+				<div class="fenye">
+					<ul>
+						<?=$listpage?> 共<?=$total?>条记录 <?php if($page){echo $page;}else{echo 1;}?>/<?=$num?>
+					</ul>
+				</div>
+			</div>
+		</div>
+<!--right-->
+<?php Yaf_Loader::import(PATH_VIEW . '/include/right.phtml');?>
+<!--end right-->
+</div>
+    <div class="link" id="link">
+		<div class="link_1"><p>友情链接</p></div>
+		<div class="link_2">
+		<ul>
+			<?=$friendurl?>
+		</ul>
+		</div>
+	</div>
+<p class="clr"></p>
+</div>
+<!--end main-->
+<!--foot-->
+<?php Yaf_Loader::import(PATH_VIEW . '/include/foot.phtml');?>
+ <!--end foot-->
+</body>
+</html>

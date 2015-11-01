@@ -1,0 +1,110 @@
+<div class="zh-2l">
+<div class="zh-2la"><span>按科室<a>找医生</a></span></div>
+<div class="zh-2ls">
+<div class="zh-4">
+<div class="zh-4s">
+<div class="zh-4a">
+<div class="zy-a">选择区域:</div>
+<div class="zy-b" id="zys">
+<div id="slips2" >
+<a class="<?php if($province==false){echo 'focus';}?>" title="不限" href="/?province=&name=<?=$name ?>" class=focus>不限</a>
+                <a class="<?php if($province==2){echo 'focus';}?>" title="上海" href="/?province=2&name=<?=$name ?>">上海</a>
+                <a class="<?php if($province==22){echo 'focus';}?>" title="江苏" href="/?province=22&name=<?=$name ?>">江苏</a>
+                <a class="<?php if($province==1){echo 'focus';}?>" title="北京" href="/?province=1&name=<?=$name ?>">北京</a>
+                <a class="<?php if($province==29){echo 'focus';}?>" title="广东" href="/?province=29&name=<?=$name ?>">广东</a>
+                <a class="<?php if($province==9){echo 'focus';}?>" title="陕西" href="/?province=9&name=<?=$name ?>">陕西</a>
+                <a class="<?php if($province==3){echo 'focus';}?>" title="天津" href="/?province=3&name=<?=$name ?>">天津</a>
+                <a class="<?php if($province==19){echo 'focus';}?>" title="湖北" href="/?province=19&name=<?=$name ?>">湖北</a>
+                <a class="<?php if($province==8){echo 'focus';}?>" title="山西" href="/?province=8&name=<?=$name ?>">山西</a>
+                <a class="<?php if($province==23){echo 'focus';}?>" title="安徽" href="/?province=23&name=<?=$name ?>">安徽</a>
+                <a class="<?php if($province==4){echo 'focus';}?>" href="/?province=4&name=<?=$name ?>">重庆</a>
+                <a class="<?php if($province==27){echo 'focus';}?>" href="/?province=27&name=<?=$name ?>">福建</a>
+                <a class="<?php if($province==11){echo 'focus';}?>" href="/?province=11&name=<?=$name ?>">甘肃</a>
+                <a class="<?php if($province==31){echo 'focus';}?>" href="/?province=31&name=<?=$name ?>">广西</a>
+                <a class="<?php if($province==18){echo 'focus';}?>" href="/?province=18&name=<?=$name ?>">贵州</a>
+                <a class="<?php if($province==32){echo 'focus';}?>" href="/?province=32&name=<?=$name ?>">海南</a>
+                <a class="<?php if($province==16){echo 'focus';}?>" href="/?province=16&name=<?=$name ?>">河北</a>
+                <a class="<?php if($province==20){echo 'focus';}?>"href="/?province=20&name=<?=$name ?>">河南</a>
+                <a class="<?php if($province==7){echo 'focus';}?>" href="/?province=7&name=<?=$name ?>">黑龙江</a>
+                <a class="<?php if($province==30){echo 'focus';}?>" href="/?province=30&name=<?=$name ?>">湖南</a>
+                <a class="<?php if($province==6){echo 'focus';}?>" href="/?province=6&name=<?=$name ?>">吉林</a>
+                <a class="<?php if($province==25){echo 'focus';}?>" href="/?province=25&name=<?=$name ?>">江西</a>
+                <a class="<?php if($province==5){echo 'focus';}?>" href="/?province=5&name=<?=$name ?>">辽宁</a>
+                <a class="<?php if($province==33){echo 'focus';}?>" href="/?province=33&name=<?=$name ?>">内蒙古</a>
+                <a class="<?php if($province==10){echo 'focus';}?>" href="/?province=10&name=<?=$name ?>">宁夏</a>
+                <a class="<?php if($province==12){echo 'focus';}?>" href="/?province=12&name=<?=$name ?>">青海</a>
+                <a class="<?php if($province==21){echo 'focus';}?>" href="/?province=21&name=<?=$name ?>">山东</a>
+                <a class="<?php if($province==15){echo 'focus';}?>" href="/?province=15&name=<?=$name ?>">四川</a>
+                <a class="<?php if($province==14){echo 'focus';}?>" href="/?province=14&name=<?=$name ?>">西藏</a>
+                <a class="<?php if($province==13){echo 'focus';}?>" href="/?province=13&name=<?=$name ?>">新疆</a>
+                <a class="<?php if($province==17){echo 'focus';}?>" href="/?province=17&name=<?=$name ?>">云南</a>
+                <a class="<?php if($province==24){echo 'focus';}?>" href="/?province=24&name=<?=$name ?>">浙江</a>
+<div class="clr"></div>
+</div>
+<div class="zy-c" >展开</div>
+</div>
+</div>
+</div><div id="conts21" >
+<div class="zh-4n">
+<div class="zh-4b">
+<div class="zy-e">选择科室:</div>
+<ul id="slips3" >
+<li class="<?php if($name == false){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=">所有</a></li>
+<li class="<?php if($name == "心血管内科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=心血管内科">心血管内科</a></li>
+<li class="<?php if($name == "呼吸内科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=呼吸内科">呼吸内科</a></li>
+<li class="<?php if($name == "消化内科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=消化内科">消化内科</a></li>
+<li class="<?php if($name == "神经内科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=神经内科">神经内科</a></li>
+<li class="<?php if($name == "肾内科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=肾内科">肾内科</a></li>
+<li class="<?php if($name == "血液科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=血液科">血液科</a></li>
+<li class="<?php if($name == "风湿免疫科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=风湿免疫科">风湿免疫科</a></li>
+<li class="<?php if($name == "感染科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=感染科">感染科</a></li>
+<li class="<?php if($name == "内分泌科"){echo 'ls_a3';}else{echo 'ls_b3';}?>"><a href="/?province=<?=$province?>&name=内分泌科">内分泌科</a></li>
+</ul>
+<div class="zy-d"><a href="/doctor">更多&gt;&gt;</a></div>
+</div>
+</div>
+
+<div id="conts31" style="display:block">
+
+<?php foreach($doctor as $v){ ?>
+<div class="zh-5a">
+<div class="zh-5aa"><a href="/h_<?=$v['hospitalId']?>/<?=$v['deptId']?>/<?=$v['id']?>/" ><img src="<?php if(!empty($v['photoUrl'])){echo "{$v['photoUrl']}";}else{echo "<?=IMGURL?>static/home/images/doc-unknow.png";}?>" width="60" height="60" onerror="this.src='<?=IMGURL?>static/home/images/doc-unknow.png';" /></a></div>
+<div class="zh-5ab">
+<span><a href="/h_<?=$v['hospitalId']?>/<?=$v['deptId']?>/<?=$v['id']?>/" ><?=$v['name']?></a><?=$v['title']?> <?=$v['specialtitle']?></span>
+<p><a href="/h_<?=$v['hospitalId']?>/" ><?=$v['hospitalName']?></a></p><p><a href="http://www.guahao.com/department/<?=$v['deptId']?>" rel="nofollow"><?=$v['deptName']?></a></p>
+</div>
+<div class="zh-5ac"><span>擅长：</span><?=$v['specialty']?></div>
+<div class="zh-5ad">
+<span><a style="float:left;" href="http://www.guahao.com/commentslist/e-<?=$v['id']?>/1-0" rel="nofollow"><?=$v['evaluteNum']?>条点评</a><a  style="float:left;"  href="http://www.guahao.com/expert/<?=$v['id']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shindex_131213_37.jpg" width="59" height="21" alt="约门诊" /></a></span>
+<p class="picfen">
+<?php
+$fen = ($v['score']/2);
+$ffen = floor($v['score']/2);
+for($i=0;$i<5;$i++){if($i<$ffen){echo "<font class=\"star1\"></font>";}elseif($ffen<$fen && $ffen==$i){echo "<font class=\"star2\"></font>";}else{echo "<font class=\"star3\"></font>";}}  ?><?=$v['score']?>分</p>
+</div>
+</div>
+<?php } ?>
+
+</div>
+
+</div>
+</div>
+
+<div class="zh-5e" id="moreys"><a href="/doctor"><img src="<?=IMGURL?>static/home/img/shlb_131213_68.jpg" width="52" height="18" alt="更多" /></a></div>
+</div>
+</div>
+<script>
+$("#zys .zy-c").click(function(){
+	var autoHeight=function(){
+	};
+	var height=$("#slips2").height();
+	if($('.zy-b').height()<height){
+		$("#zys .zy-c").html("收起");
+	}else{
+		height=22;
+		$("#zys .zy-c").html("展开");
+	}
+	$('.zy-b').animate({height:height+'px'},autoHeight);
+	// $('.zy-b').height(height+'px');
+});
+</script>

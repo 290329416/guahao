@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<base target="_blank">
+<title>无标题文档</title>
+</head>
+<link rel="stylesheet" href="<?=IMGURL?>static/home/css/cs.css" type="text/css"/>  
+<script src="<?=IMGURL?>static/home/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="<?=IMGURL?>static/home/js/zhengzhuang.js" type="text/javascript"></script>
+<body>
+<div class="cs">
+<div class="cs_1">
+<strong id="maintitle"><?=$cssymptom['name']?></strong>
+<div class="zc_num">0%</div>
+<div class="zc_login"><img width="0%" height="10" id="jdt" src="<?=IMGURL?>static/home/images/zc_login.png"/></div>
+<div class="zc_pc_jb"></div>
+
+<div class="zc_question">
+<h3 id="content"><?=$csdiagnose['content']?></h3>
+<script>
+	var listid=new Array();
+    var lcid="<?=$csdiagnose['id']?>";
+    listid[listid.length]=["<?=$csdiagnose['id']?>","<?=$csdiagnose['content']?>"];
+</script>	
+
+<div class="zc_question_btn"><a href="javascript:enter()" class="zc_ye"></a><a href="javascript:next()" class="zc_ye zc_no"></a></div>
+<div class="zc_return_btn" style="display:none"><a href="javascript:back()" name="0"> 返回上一步</a></div>
+</div>
+</div>
+</div>
+<div class="zz_zt_cou zz_zt_cou1" id=jg style="display:none">
+            	<p class="zz_zt_ct zz_zt_ct_01"><span style="font-size:24px;" class="title">根据<?=$cssymptom['name']?>自测结果</span></p>
+                <div class="jj_connect_list">
+					
+					<h2 class="jj_c_l_h2">就诊建议</h2>
+					<div class="jj_text_span" style="color:#808080"></div>
+                    <h2 class="jj_c_l_h2">推荐科室</h2>
+					<div class="jj_c_l_p"></div>
+
+				</div>
+<div id=adbox style="display:none">
+<h2 ><font color="#CC3300" id="xgyy" ><?=$cssymptom['name']?></font>相关医院</h2>
+				<div class="l">
+   <iframe name="I1"  style="width:100%; height:243px;" id=ifrbox src="" border="0" frameborder="0" scrolling="no">浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe>
+  </div>
+</div>
+            </div>
+</body>
+</html>
+<script>
+var index=0;
+var back=function(){
+    index--;
+    lcid=listid[index][0];
+     $("#content").html(listid[index][1]);
+     $(".zc_return_btn").hide();
+      $(".zc_pc_jb").html('');
+             if(index>0){
+            $(".zc_return_btn").show();
+            $(".zc_pc_jb").html('已为您排除<span>'+index+'</span> 种疾病，继续选择查看精准分诊建议');
+        }
+        else{
+            $(".zc_return_btn").hide();
+            $(".zc_pc_jb").html('');
+        }
+document.getElementById("jdt").style.width=(index*10)+"%";
+                    $(".zc_num").html((index*10)+"%");
+}
+var showjg=function(data){
+        $(".cs_1").hide();
+        $("#jg").show();
+        $(".jj_text_span").html(data.content);
+        var html="";
+        for(var i=0;i<data.departments.length-1;i++){
+            html+=data.departments[i].name+" ";
+        }
+        $(".jj_c_l_p").html(html);
+$("#ifrbox").attr("src","ad/58_cs_ad.html?key="+data.departments[0].name);
+//$("#ifrbox").attr("src","http://gh.yl.wan.58.com/ad/58_cs_ad.html?key=%E6%9D%9C%E6%8B%89%E6%8B%89%E5%8D%87%E8%81%8C%E8%AE%B0");
+
+autoHeight();
+}
+var enter=function(){
+    var back=function(html){
+        eval("var data="+html+"");
+        showjg(data);
+		autoHeight();
+    }
+    $.post("default.aspx?file=cs2_ajax",{ id:lcid,isSelect:1 },back);
+}
+var next=function(){
+    var back=function(html){
+try{
+eval("var data="+html+"");    
+}catch(x){
+        showjg({content:"如未找到原因，建议到医院普通内科进一步检查。",departments:[{name:"普通内科"},{}]});
+	return;
+    }
+        
+                    index++;
+                    lcid=data.id;
+                    listid[index]=[data.id,data.content];
+document.getElementById("jdt").style.width=(index*10)+"%";
+                    $(".zc_num").html((index*10)+"%");
+
+        $("#content").html(data.content);
+        if(index>0){
+            $(".zc_return_btn").show();
+            $(".zc_pc_jb").html('已为您排除<span>'+index+'</span> 种疾病，继续选择查看精准分诊建议');
+        }
+        else{
+            $(".zc_return_btn").hide();
+            $(".zc_pc_jb").html('');
+        }
+    }
+
+        $.post("default.aspx?file=cs1_ajax",{ id:lcid,isSelect:0 },back);
+}
+var showback=function(c){
+if(c>0){
+document.getElementById("adbox").style.display="";
+}
+autoHeight();
+}
+var autoHeight=function(){
+return;
+var height=document.body.offsetHeight;
+if(!$.browser.msie)height = document.documentElement.offsetHeight;
+
+parent.window.document.getElementById("58_cs_box").style.height=height+"px";
+}
+$("#maintitle").html(zhengzhuang["$Parameter1$"]);
+$("#xgyy").html(zhengzhuang["$Parameter1$"]);
+$(".title").html("根据"+zhengzhuang["$Parameter1$"]+"自测结果");
+autoHeight();
+</script>

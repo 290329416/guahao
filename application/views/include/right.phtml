@@ -1,0 +1,43 @@
+<div class="con_r">
+	<!--推荐医院-->
+	<!--推荐医院 end-->
+	<!--癫痫常识-->
+		<!-- <div class="dxcs">
+			<h3>癫痫常识</h3>
+			<div class="nr">
+			 <img src="<?=IMGURL?>static/home/img/1011tpynx_list_02.jpg" width="129" height="85" alt=""/>
+				<ul>
+		
+				</ul>
+			</div>
+		</div> -->
+	<!--癫痫常识 end-->
+		<div class="jrtj">
+			<h3>最新文章</h3>
+			<div class="nr">
+				<ul>
+					<?php foreach($article_s as $v){?>
+							<li><a href="/<?=$catkey[$v['catid']]['name']?><?=$v['id']?>.html"><?=$v['title']?></a></li>
+					<?php }?>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div class="jrtj">
+			<h3>关注焦点</h3>
+			<div class="nr">
+				<ul>
+					<li><a href="/<?=$v['path_1']?>/<?=$v['path_2']['catpath']?>/<?=$v['id']?>.html"><?=$v['title']?></a></li>
+				</ul>
+			</div>
+		</div> -->
+
+		<!-- <div class="jrtj">
+			<h3>热门点击</h3>
+			<div class="nr">
+				<ul>
+					<li><a href="/<?=$v['path_1']?>/<?=$v['path_2']['catpath']?>/<?=$v['id']?>.html"><?=$v['title']?></a></li>
+				</ul>
+			</div>
+		</div> -->
+</div>

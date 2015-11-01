@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base target="_blank">
+<title><?=$hospital['name']?>-搜狐健康</title>
+<link href="<?=IMGURL?>static/home/css/style_s.css" rel="stylesheet" type="text/css" />
+<link href="<?=IMGURL?>static/home/css/shlist.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<!--head-->
+<script src="<?=IMGURL?>static/home/js/header.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/nav.js"></script>
+<!--end head-->
+<p class="clr"></p>
+<!--main-->
+<div class="main">
+<?php Yaf_Loader::import(PATH_VIEW . '/include/liucheng.phtml');?>
+<p class="clr"></p>
+<div class="wz-1">
+
+<div class="wz-1a">
+<div class="wz-1l">
+<div class="wz-4a">
+<div class="wz-4aa"><img src="<?php if(!empty($hospital['pic'])){echo "{$hospital['pic']}";}else{echo "<?=IMGURL?>static/home/images/hos-l.png";}?>" onerror="this.src='<?=IMGURL?>static/home/images/hos-l.png';"  width="176" height="133" alt="" /></div>
+<div class="wz-4ab"><?=$hospital['name']?></div>
+<ul>
+<li><span>医院等级：</span> <font id="levellabel"><?=$hospital['levelName']?></font></li>
+<li><span>地址：</span> <?=$hospital['address']?></li>
+<li><span>电话：</span> <?=$hospital['phone']?></li>
+<li><span>官网：</span><?=$hospital['website']?></li>
+</ul>
+<div class="wz-4ac">
+<a href="http://www.guahao.com/hospital/shiftcase/<?=$hospital['id']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shlb_131213_28.jpg" width="84" height="26" alt="查看号源" title="查看号源" /></a>
+<a href="http://www.guahao.com/hospital/<?=$hospital['id']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shlb_131213_29.jpg" width="84" height="26" alt="约门诊" title="约门诊" /></a>
+</div>
+</div>
+<div class="wz-4b">
+<style>
+.info div{clear:both;line-height:20px;}
+</style>
+<div class="info" style="float:left;height:auto;">
+<span>医院简介：</span>
+<p>
+<?=$hospital['introduction']?>
+</p>
+</div>
+</div>
+
+<div class="more"><a onclick="morebutton();return(false)" href="" >查看更多>></a></div>
+</div>
+<div class="wz-1r">
+<span>预约规则:</span>
+<p><?php echo substr($hospital['rule'],0,610);?> <a href="http://www.guahao.com/hospital/desc/<?=$hospital['id']?>" rel="nofollow">[详情]</a>
+</p>
+</div>
+</div>
+<div class="wz-1b"></div>
+
+
+</div>
+
+<script>
+var id='<?=$hospital['id']?>';
+var morebutton=function(){
+	var height=$(".wz-4b .info").height()+20;
+	if($('.wz-4b').height()<height){
+		$(".more a").html("收起");
+	}else{
+		height=90;
+		$(".more a").html("查看更多>>");
+	}
+	$('.wz-4b').animate({height:height+'px'},function(){});
+}
+</script>
+<p class="clr"></p>
+<div class='ml'>
+
+<?php if(!empty($article)){?>
+<style>
+#news .newslist li{float:left;width:300px;height:20px;margin:2px;overflow: hidden;}
+</style>
+<div class="wz-5l" id="news">
+	<div class="wz-5la"><span ><font style="float:left;">相关文章</font><!-- <a  href="/h_$Parameter1$/list/" target="_blank" style="float:right;padding:0px;font-size:12px;">更多</a> --></span></div>
+		<div class="wz-5lb" style="padding:0px 20px 0px 20px;width:630px;" >
+		<div >
+			<ul class='newslist'>
+				<?=$article?>
+			</ul>
+		</div>
+	</div>
+</div>
+<? } ?>
+<div class="wz-5l" id='keshi'>
+<div class="wz-5la"><span>按科室<a>查找</a></span></div>
+<div class="wz-5lb" >
+<?php foreach($kslist as $key=>$val){ ?>
+<div class="wz-5ln">
+	<span><?=$key?></span>
+	<ul>
+	<?php for($i=0;$i<count($val);$i++){ ?>
+	<li><a rel="nofollow" href="http://www.guahao.com/department/<?=$val[$i]['hdeptId']?>"><?=$val[$i]['name']?></a>(<?=$val[$i]['expertCount']?>人)</li>
+	<?php } ?>
+	</ul>
+</div>
+<?php } ?>
+</div>
+
+</div>
+
+<div class="wz-2l">
+<div class="wz-2la">
+<div class="wz-2ln">
+<span><a>就医</a>分享</span><p><a href="http://www.guahao.com/commentslist/h-<?=$hospital['id']?>/0-0" rel="nofollow">
+更多&gt;</a></p></div>
+</div>
+
+<div class="wz-2lb">
+
+<?php foreach($share as $v){ ?>
+<div class="wz-2lc">
+<div class="wz-2a">
+<span>就诊原因：<a href="Hospital?did=&department=&key=<?=$v['diseaseReason']?>"><?=$v['diseaseReason']?></a></span>
+<p><?=$v['content']?></p>
+<div class="wa"><strong><?=$v['nickName']?></strong>于 <?=$v['gmtCreated']?> (就诊后<?=$v['treatmentAfterday']?>天) 评价</div>
+<a href=""><img src="<?=IMGURL?>static/home/img/shlb_131213_30.jpg" width="56" height="16" alt="诊后分享" /></a>
+</div>
+<div class="wz-2b">
+<p><span>疗效：</span><?=$effect[$v['treatmentEffect']]?><span>态度：</span><?=$attitude[$v['doctorAttitude']]?></p>
+<div class="wb"><a href="http://www.guahao.com/commentexpert/setuseful/<?=$v['id']?>" rel="nofollow">有用</a></div>
+</div>
+</div>
+<?php } ?>
+
+</div>
+</div>
+</div>
+
+<div class="mr"><div class="wz-5r">
+<div class="wz-5ra"><span>本院医生<a>一览</a></span></div>
+<div class="wz-5rb">
+
+<?php foreach($expert as $v){ ?>
+<div class="wz-5rn" state="<?=$v['state']?>">
+<div class="wra"><a href="/h_<?=$v['hospitalId']?>/<?=$v['hdeptId']?>/<?=$v['expertId']?>/" ><?=$v['name']?></a><?=$doctorItems[$v['adminTitle']]?> <?=$academicItems[$v['academicType']]?></div>
+<div class="wrb"><img src="<?php if($v['expertPhoto']){echo "{$v['expertPhoto']}";}else{echo "<?=IMGURL?>static/home/images/doc-unknow.png";}?>" width="64" alt="" title="" onerror="this.src='<?=IMGURL?>static/home/images/doc-unknow.png';" /></div>
+<div class="wrc"><p class="picfen">
+<?php
+	$fen = ($v['score']/2);
+	$ffen = floor($v['score']/2);
+	for($i=0;$i<5;$i++){if($i<$ffen){echo "<font class=\"star1\"></font>";}elseif($ffen<$fen && $ffen==$i){echo "<font class=\"star2\"></font>";}else{echo "<font class=\"star3\"></font>";}}?>
+</p><p><span><?=$v['score']?>分</span>/<?=$v['evaluteNum']?>人</p></div>
+<div class="wrd"><span>医院：</span><a href="/h_<?=$v['hospitalId']?>/" ><?php echo substr($v['hospitalName'],0,30);?></a></div>
+<div class="wrd"><span>等级：</span><?=$v['hosptialLevel']?></div>
+<div class="wrd"><span>科室：</span><a href="http://www.guahao.com/department/<?=$v['hdeptId']?>" rel="nofollow"><?=$v['hdeptName']?></a></div>
+<div class="wre"><span>简介：</span><?php echo substr($v['introduction'],0,150);?></div>
+<div class="wrf">
+<a href="http://www.guahao.com/department/shiftcase/<?=$v['hdeptId']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shlb_131213_52.jpg" width="84" height="26" alt="查看号源" title="查看号源" /></a>
+<a href="http://www.guahao.com/expert/<?=$v['expertId']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shlb_131213_53.jpg" width="84" height="26" alt="约门诊" title="约门诊" /></a>
+</div>
+</div>
+<div class="wzn"></div>
+<?php }?>
+
+
+</div>
+</div>
+<script>
+if($(".wz-2l .wz-2lc").length==0)$(".wz-2l").hide();
+$(".wz-5rn[state='1'] .wrf").hide();
+</script>
+<p class="clr"></p>
+
+
+<div class="wz-5r">
+<div class="wz-5ra"><span>来院<a>地图</a></span></div>
+<div class="wz-5rc">
+<div class="wz-5rs">
+
+<img src="http://api.map.baidu.com/staticimage?width=220&amp;height=240&amp;center=<?=$hospital['hospitalLongitude']?>,<?=$hospital['hospitalLatitude']?>&amp;zoom=16&amp;markers=<?=$hospital['hospitalLongitude']?>,<?=$hospital['hospitalLatitude']?>"  alt="" />
+<p  align="center"><a href="http://map.baidu.com/?latlng=<?=$hospital['hospitalLatitude']?>,<?=$hospital['hospitalLongitude']?>&amp;title=<?=$hospital['name']?>&amp;content=<?=$hospital['address']?>&amp;autoOpen=true" rel="nofollow">查看路线</a></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<p class="clr"></p>
+<?php Yaf_Loader::import(PATH_VIEW . '/include/from.phtml');?>
+</div>
+<!--end main-->
+<p class="clr"></p>
+<!--foot-->
+<?php Yaf_Loader::import(PATH_VIEW . '/include/foot.phtml');?>
+<!--end foot-->
+</body>
+</html>

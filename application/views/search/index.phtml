@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?= isset($title) ? $title . '_' . $config['sitename'] : SITENAME ?></title>
+        <base target="_blank" />
+        <meta name="keywords" content="<?= isset($keywords) ? trim($keywords) : (isset($config['keywords']) ? $config['keywords'] : '') ?>" />
+        <meta name="Description" content="<?= isset($description) ? trim($description) : (isset($config['description']) ? $config['description'] : '') ?>" />
+        <link rel="stylesheet" href="<?= IMGURL ?>static/css/mtsy.css" />
+        <link rel="stylesheet" href="<?= IMGURL ?>static/css/mtlb.css" type="text/css"/>
+        <script language="javascript" src="<?= IMGURL ?>static/js/jQuery-1.11.0.js"></script>
+        <script language="javascript" src="<?= IMGURL ?>static/js/mtxg.js"></script>
+    </head>
+
+    <body>
+        <!--头部-->
+        <div class="header">
+            <div class="top_bar">
+                <div class="mtlogo fll"><a href=""></a></div>
+                <div class="mtinfo flr"></div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="hover"><a href="/zxzx/kgzy/">空谷足音</a></li>
+                    <li><a href="/zxzx/fskn/">福寿康宁</a></li>
+                    <li><a href="/zxzx/bksm/">别开生面</a></li>
+                    <li><a href="/zxzx/kjak/">阖家安康</a></li>
+                    <li><a href="/zxzx/bbbq/">百病不侵</a></li>
+                    <li><a href="/zxzx/hdzw/">厚德载物</a></li>
+                    <li><a href="/zxzx/bqbn/">不屈不挠</a></li>
+                    <li><a href="/zxzx/xgzx/">学贯中西</a></li>
+                    <li><a href="/zxzx/wfll/">威风凛凛</a></li>
+                    <li><a href="/zxzx/cxtx/">促膝谈心</a></li>
+                    <li><a href="/zxzx/tcxd/">赤诚相待</a></li>
+                    <li><a href="/zxzx/cgxw/">晨光熹微</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--头部 end-->
+        <div class="clear"></div>
+        <div class="main">
+            <div class="content">
+                <div class="dqwz">你的当前位置：<a href="/zxzx/">首页</a> > <?= $keywords ?></div>
+                <div class="con_left">
+                    <ul id="listSty">
+                        <?php foreach ($data['data'] as $v) : ?>
+                        <li>
+                            <a href="/<?= SITEDIR . '/' . $v['catpath'] . '/' . $v['id'] . '.html' ?>"><?= misc::remove_nbsp($v['title']); ?></a><?= date('Y-n-j', $v['inputtime']); ?>
+                        </li>
+                        <?php endforeach; ?>
+                        <script language="javascript">
+                            var changeColor = document.getElementById("listSty").getElementsByTagName("li");
+                            for (i = 0; i < changeColor.length; i++) {
+                                (i % 2 == 0) ? (changeColor[i].style.background = "#fff") : (changeColor[i].style.background = "#f6f6f6");
+                            }
+                        </script>
+                    </ul>
+                    <div class="fy"><?= isset($data['page']) ? $data['page'] : '' ?></div>
+                </div>
+                <div class="con_right">
+                    <div class="zxwz">
+                        <p>最新文章</p>
+                        <ul>
+                            <?php foreach ($data['new'] as $k => $v) : ?>
+                            <li><a href="/<?= SITEDIR . '/' . $category[$v['catid']]['catpath'] . '/' . $v['id'] . '.html' ?>"><?= mb_substr($v['title'], 0, 18) ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="clear"></div>
+<?php Yaf_Loader::import(PATH_VIEW . '/footer.phtml');?>

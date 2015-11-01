@@ -1,0 +1,164 @@
+/* CSS Document */
+.zh-st{ float:left; width:100%; overflow:hidden; margin-top:15px; text-align:center}
+
+.zh-1{float:left; width:100%; overflow:hidden; margin-top:12px; }
+.zh-1l{ float:left; width:332px; overflow:hidden; background:url(../img/shindex_131213_10.jpg) repeat-y}
+.zh-1la{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_9.jpg) no-repeat top}
+.zh-1la span{ float:left; display:inline; width:auto; height:28px; line-height:28px; overflow:hidden; margin-top:10px; margin-left:14px; font-size:18px; font-weight:bold; color:#aace30}
+.zh-1la span a{ font-size:18px; font-weight:bold; color:#1390c7}
+.zh-1lb{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_11.jpg) no-repeat bottom;}
+.zh-1lc{ float:left; width:100%; overflow:hidden; height:344px}
+
+.zh-1na{ float:left; display:inline; width:302px; overflow:hidden; margin:5px 0px 0px 15px; border-bottom:1px #e6e6e6 dashed; padding-bottom:2px}
+.zha{ float:left; width:22px; height:22px; overflow:hidden; line-height:22px; text-align:center; font-size:14px; font-weight:bold; color:#fff; background:url(../img/shindex_131213_12.jpg) no-repeat}
+.zhb{ float:left; width:auto; height:22px; overflow:hidden; line-height:22px;font-size:14px; font-weight:bold; color:#1c86b6; display:inline; margin-left:9px; }
+.zh-1na p{ float:left; width:299px; line-height:20px; height:60px; overflow:hidden; margin-top:3px}
+.zh-1na p a{ font-size:12px; color:#666; margin-right:12px}
+.zh-1na p a:hover{ color:#c60}
+
+.zh-1nb{ float:left; display:inline; width:302px; overflow:hidden; margin:5px 0px 0px 15px; border-bottom:1px #e6e6e6 dashed; padding-bottom:2px}
+.zh-1nb p{ float:left; width:299px; line-height:20px; height:20px; overflow:hidden; margin-top:3px}
+.zh-1nb p a{ font-size:12px; color:#666; margin-right:12px}
+.zh-1nb p a:hover{ color:#c60}
+
+.zh-1nc{ float:left; display:inline; width:302px; overflow:hidden; margin:5px 0px 0px 15px; border-bottom:1px #e6e6e6 dashed; padding-bottom:2px}
+.zh-1nc p{ float:left; width:299px; line-height:20px; height:40px; overflow:hidden; margin-top:3px}
+.zh-1nc p a{ font-size:12px; color:#666; margin-right:9px}
+.zh-1nc p a:hover{ color:#c60}
+
+.zh-1ld{ float:left; width:100%; overflow:hidden}
+.zh-1ld img{ float:right; margin-top:4px}
+
+.zh-1m{ float:left; display:inline; width:336px; height:404px; overflow:hidden; background:url(../img/shlb_131213_69.jpg) no-repeat; margin-left:11px}
+.zh-1ma{ float:left; display:inline; width:320px; height:360px; overflow:hidden; margin:8px 8px 0px; height:360px}
+.zh-1ma img{ float:left; width:320px; height:360px; overflow:hidden}
+.zh-1ma span{ float:left; display:inline; width:270px; height:40px; line-height:40px; text-align:center; overflow:hidden; background:
+#accc2b; margin-top:-40px; margin-left:25px}
+.zh-1ma span a{ font-size:18px; font-weight:bold; color:#fff}
+.zh-1ma span a:hover{ color:#c60}
+.zh-1m ul{ float:right; width:196px; overflow:hidden; margin-top:10px}
+.ls_a1{ float:left; display:inline; width:11px; height:11px; overflow:hidden; margin-right:11px; background:url(../img/shindex_131213_18.jpg) no-repeat; cursor:pointer}
+.ls_b1{float:left; display:inline; width:9px; height:9px; overflow:hidden; margin-right:11px; background:url(../img/shindex_131213_19.jpg) no-repeat; cursor:pointer; margin-top:1px}
+
+.zh-1r{ float:right; width:262px; overflow:hidden; background:url(../img/shindex_131213_21.jpg) repeat-y}
+.zh-1ra{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_20.jpg) no-repeat top}
+.zh-1ra span{ float:left; display:inline; width:auto; height:28px; line-height:28px; overflow:hidden; margin-top:10px; margin-left:14px; font-size:18px; font-weight:bold; color:#aace30}
+.zh-1ra span a{ font-size:18px; font-weight:bold; color:#1390c7}
+.zh-1rb{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_22.jpg) no-repeat bottom}
+.zh-1rn{ float:left; display:inline; width:232px; overflow:hidden; border-bottom:1px #d1eaf6 solid; margin-left:15px; margin-top:13px; padding-bottom:10px}
+.zh-1rn p{ float:left; width:229px; overflow:hidden; line-height:23px; height:46px; overflow:hidden; font-size:12px; color:#666}
+.zh-1rn p span{ font-size:14px; font-weight:bold; color:#1c86b6}
+.zh-1rn p a{ font-size:12px; color:#666; margin:0px 3px}
+.zh-1rn p a:hover{ color:#c60} 
+
+.zh-2{ float:left; width:100%; overflow: hidden}
+.zh-l{ float:left; width:678px; overflow:hidden}
+
+.zh-2l{ float:left; width:100%; overflow:hidden; margin-top:13px; background:url(../img/shindex_131213_25.jpg) repeat-y}
+.zh-2la{ float:left; width:100%; overflow:hidden;background:url(../img/shindex_131213_24.jpg) no-repeat top}
+.zh-2la span{ float:left; display:inline; width:auto; height:28px; line-height:28px; margin:12px 0px 0px 20px; font-size:18px; font-weight:bold; color:#abce30}
+.zh-2la span a{ font-size:18px; font-weight:bold; color:#1c86b6}
+.zh-2lb{padding-left:1px; float:left; width:100%; overflow:hidden;background:url(../img/shindex_131213_26.jpg) no-repeat bottom; padding-bottom:16px}
+.zh-2lc{ float:left; display:inline; width:416px; margin:3px 0px 0px 20px}
+.zh-2ld{ float:right; width:224px; overflow:hidden}
+.zh-2ld span{ float:left; width:100%; overflow:hidden; height:27px; line-height:27px; font-size:16px; font-weight:bold; color:#333}
+.zh-2ld span a{ font-size:16px; font-weight:bold; color:#0c87bb}
+.zh-2ld ul{ float:left; width:221px; overflow:hidden; margin-top:13px; height:280px}
+.zh-2ld li{ float:left; width:185px; line-height:34px; height:34px; overflow:hidden; padding-left:10px; background:url(../img/shindex_131213_28.jpg) no-repeat 0px 14px; white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis; border-bottom:1px #c0c0c0 dashed}
+.zh-2ld li a{ font-size:12px; color:#4a4a4a}
+.zh-2ld li a:hover{ color:#c60}
+
+.zh-2ls{ float:left; width:100%; overflow:hidden;background:url(../img/shindex_131213_26.jpg) no-repeat bottom;}
+.zh-5e{ float: left; width:100%; overflow:hidden}
+.zh-5e img{ float:right; width:52px; overflow:hidden}
+
+.zh-3la{ float:left; width:100%; overflow:hidden;background:url(../img/shindex_131213_24.jpg) no-repeat top}
+.zh-3la span{ float:left; display:inline; width:644px; height:28px; line-height:28px; margin:12px 0px 0px 17px; font-size:18px; font-weight:bold; color:#abce30; padding-bottom:3px}
+.zh-3la span a{ font-size:18px; font-weight:bold; color:#1c86b6}
+
+.zh-3ln{ float:left; display:inline; width:644px; overflow:hidden; border-bottom:1px #d1eaf6 solid; margin:30px 0px 0px 17px; padding-bottom:26px}
+.zh-3ln img{ float:left; width:75px; border:1px #d1eaf6 solid; overflow:hidden}
+.zh-3na{ float:right; width:546px; overflow:hidden; line-height:24px; height:24px; font-size:12px; color:#666}
+.zh-3na span{ font-size:14px; color:#333}
+.zh-3na .day{ color:#c2c1c1;}
+.zh-3nb{ float:right; width:546px; overflow:hidden; line-height:24px; height:48px; font-size:12px; color:#666; text-indent:2em; margin-top:10px}
+
+.zh-4{ float:left; display:inline; width:642px; overflow:hidden; margin-left:17px; margin-top:12px}
+.zh-4a{ float:left;width:100%; overflow:hidden; background:url(../img/shindex_131213_29.jpg) no-repeat top}
+.zh-4s{ float:left; display:inline; width:100%; overflow:hidden; background:url(../img/shindex_131213_30.jpg) repeat-y;}
+.zh-4b{ float:left;width:100%; overflow:hidden; background:url(../img/shindex_131213_31.jpg) no-repeat bottom; padding-bottom:12px}
+.zh-4n{ float:left; display:inline; width:100%; overflow:hidden; background:url(../img/shindex_131213_30.jpg) repeat-y;}
+.zy-a{ float:left; display:inline; width:auto; height:22px; line-height:22px; overflow:hidden; font-size:12px; color:#1c86b6; margin:13px 0px 0px 18px}
+.zy-b{ float:left; width:auto; overflow:hidden; margin-top:14px; height:20px}
+#slips2{float:left; width:490px;overflow:visible;}
+.zh-4a ul{ float:left; width:500px; overflow:hidden}
+.zh-4b ul{ float:left; width:auto; overflow:hidden; margin-top:5px}
+#slips2 .focus{ float:left; display:inline;  height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:0px; font-size:12px; color:#fff; background:#2397cb; padding:0px 1px}
+#slips2 a{width:40px;float:left; display:inline; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:0px; font-size:12px; color:#7f7f7f;padding:0px 1px;text-align: center}
+.ls_a2{ float:left; display:inline; width: auto; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:6px; font-size:12px; color:#fff; background:#2397cb; padding:0px 3px}
+.ls_b2{ float:left; display:inline; width: auto; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:6px; font-size:12px; color:#7f7f7f;}
+.zy-c{ float:left; display:inline; width:40px; height:20px; line-height:20px; overflow:hidden; background:url(../img/shindex_131213_32.jpg) no-repeat center right; cursor:pointer; margin-left:7px; font-size:12px; color:#c7c7c7}
+.zy-e{ float:left; display:inline; width:auto; height:22px; line-height:22px; overflow:hidden; font-size:12px; color:#1c86b6; margin:4px 0px 0px 18px}
+.ls_a3,.ls_a4,.ls_a5,.ls_a6,.ls_a7,.ls_a8,.ls_a9,.ls_a10,.ls_a11,.ls_a12,.ls_a13,.ls_a14,.ls_a15,.ls_a16,.ls_a17,.ls_a18,.ls_a19{ float:left; display:inline; width: auto; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:5px; font-size:12px; color:#fff; background:#2397cb; padding:0px 3px}
+.ls_b3,.ls_b4,.ls_b5,.ls_b6,.ls_b7,.ls_b8,.ls_b9,.ls_b10,.ls_b11,.ls_b12,.ls_b13,.ls_b14,.ls_b15,.ls_b16,.ls_b17,.ls_b18,.ls_b19{ float:left; display:inline; width: auto; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:5px; font-size:12px; color:#7f7f7f;}
+.zy-d{ float:left; display:inline; width:auto; height:20px; line-height:20px; overflow:hidden; margin-left:7px; margin-top:5px}
+.zy-d a{ font-size:12px; color:#c7c7c7}
+.zy-d a:hover{ color:#c60}
+
+.zh-5a{ float:right; display:inline; width:641px; overflow:hidden; margin-top:26px; padding-bottom:4px}
+.zh-5aa{ float:left; width:64px; overflow:hidden}
+.zh-5ab{ float:left; display:inline; width:132px; overflow:hidden; margin-left:11px; margin-top:2px}
+.zh-5ab span{ float:left; width:100%; overflow:hidden; line-height:21px; height:21px; font-size:12px; color:#767676}
+.zh-5ab span a{ font-size:12px; font-weight:bold; color:#333}
+.zh-5ab p{ float:left; width:129px; line-height:21px; height:21px; overflow:hidden; font-size:12px; color:#767676}
+.zh-5ac{ float:left; display:inline; width:251px; overflow:hidden; margin-left:6px; line-height:21px; height:63px; font-size:12px; color:#767676; background:url(../img/shindex_131213_36.jpg) no-repeat center right; padding-right:19px}
+.zh-5ad{ float:right; width:153px; overflow:hidden}
+.zh-5ad span{ float:left; width:auto;overflow:hidden; height:21px; line-height:21px; font-size:12px; color:#7e7e7e; margin-top:8px;}
+.zh-5ad span a{float:left;width:70px;}
+.zh-5ad span img{ float:right; width:59px}
+.zh-5ad p{ float:left; width:140px;overflow:hidden; height:21px; line-height:21px; font-size:12px; color:#316ac5; margin-top:5px;}
+.zh-5ad p img{ float:left; width:77px; margin-top:2px; padding-right:5px}
+
+
+.zh-r{ float:right; width:262px; overflow:hidden}
+
+.zh-2r{ float:right; width:262px; overflow:hidden; background:url(../img/shindex_131213_21.jpg) repeat-y; margin-top:13px}
+.zh-2ra{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_20.jpg) no-repeat top}
+.zh-2ra span{ float:left; display:inline; width:auto; height:28px; line-height:28px; margin-top:12px; margin-left:17px; font-size:18px; font-weight: bold; color:#aace30}
+.zh-2ra span a{ font-size:18px; font-weight:bold; color:#1390c7}
+.zh-2rb{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_22.jpg) no-repeat bottom; padding-bottom:16px}
+.zh-2rb ul{ float:right; width:245px; overflow:hidden; margin-top:10px; height:270px}
+.zh-2rb li{ float:left; width:217px; padding-left:12px; height:30px; line-height:30px; overflow:hidden; background:url(../img/shindex_131213_41.jpg) no-repeat 0px 11px; white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.zh-2rb li a{ font-size:14px; color:#666}
+.zh-2rb li a:hover{ color:#c60}
+
+.zh-2rc{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_22.jpg) no-repeat bottom; padding-bottom:13px}
+.zh-2rca{ float:left; width:100%; overflow:hidden; margin-top:5px}
+.zh-2rca span{ float:left; display:inline; width:210px; padding-left:10px; margin-left:21px; background:url(../img/shindex_131213_41.jpg) no-repeat 0px 10px; font-size:12px; color:#666; height:22px; line-height:22px; overflow:hidden}
+.zh-2rca span a{ font-size:14px; color:#666; margin-left:8px}
+.zh-2rca span a:hover{ color:#c60}
+.zh-2rcb{ float:left; width:100%; overflow:hidden; margin-top:10px}
+.zh-2rcb img{ float:left; display:inline; width:146px; margin-left:54px; padding-bottom:8px}
+.zh-2rcb p{ float:left; display:inline; width:210px; line-height:23px; height:46px; overflow:hidden; margin-left:22px; font-size:12px; color:#666}
+.zh-2rcb p span{ font-weight:bold; color:#666}
+
+.zh-2rna{ float:left; width:24px; overflow:hidden; margin-top:60px}
+.zh-2rnc{ float:right; width:24px; overflow:hidden; margin-top:60px}
+.zh-2rnb{ float:left; width:198px; overflow:hidden; margin-left:8px; margin-top:12px}
+.zh-zj{ float:left;width:198px; overflow:hidden}
+.zh-zj img{ float:left; width:64px; overflow:hidden}
+.zh-zj span{ float:right; width:125px; overflow: hidden; height:20px; line-height:20px; font-size:12px; color:#666; margin-top:2px}
+.zh-zj span a{ font-size:13px; font-weight:bold; color:#333; margin-right:4px}
+.zh-zj ul{ float:right; width:125px; overflow:hidden; height:46px}
+.zh-zj li{ float:left; width:122px; height:23px; line-height:23px; overflow:hidden; font-size:12px; color:#666}
+.zh-zj p{ float:left; width:195px; line-height:23px; height:69px; overflow:hidden; font-size:12px; color:#666}
+
+.b2rollBox{width:262px;overflow:hidden;float:left; display:inline;}
+.b2rollBox .b2LeftBotton{width:24px;overflow:hidden;cursor:pointer; float:left; display:inline;margin-top:50px}
+.b2rollBox .b2RightBotton{width:24px;overflow:hidden;cursor:pointer;float:right; display:inline;margin-top:50px}
+.b2rollBox .b2Cont{width:198px;overflow:hidden;float:left; display:inline; margin-left:8px; margin-top:12px}
+.b2rollBox .b2Cont .b2ScrCont{width:1000000px;}
+.b2rollBox #b2List1,.b2rollBox #b2List2 {float:left;}
+
+
+

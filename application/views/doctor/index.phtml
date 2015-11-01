@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<base target="_blank">
+<title>约门诊_搜狐健康</title>
+<link href="<?=IMGURL?>static/home/css/style_s.css" rel="stylesheet" type="text/css" />
+<link href="<?=IMGURL?>static/home/css/shlist.css" rel="stylesheet" type="text/css" />
+<link href="<?=IMGURL?>static/home/js/jquery.vector-map.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/jquery-1.8.3.min.js"></script>
+<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+<script src="<?=IMGURL?>static/home/js/jquery.vector-map.js" type="text/javascript"></script>
+<script src="<?=IMGURL?>static/home/js/china-zh.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+</head>
+<body>
+<!--head-->
+<script src="<?=IMGURL?>static/home/js/header.js" type="text/javascript"></script>
+<script type="text/javascript" src="<?=IMGURL?>static/home/js/nav.js"></script>
+<!--end head-->
+
+<div class='main'>
+<?php Yaf_Loader::import(PATH_VIEW . '/include/liucheng.phtml');?>
+
+<div class="lb-1">
+<div class="lb-1l" style="width: 900px;">
+<div class="top1">
+<ul>
+<li class="lis2" id="Buttons21"><a href="/Hospital">医院</a></li>
+<li class="lis2_a" id="Buttons22">医生</li>
+<li class="post_li" id="post"><p>为您找到<span class="post_p" title="undefined"><?=$doctor[0]['provinceName']?></span>的相关医生</p></li>
+</ul>
+
+<div id="ContentBoxs21">
+
+</div>
+<div style="display:none;" id="ContentBoxs22"></div>
+</div>
+<div class="top3">
+<div id="ContentBoxsa21">
+<div class="lb-a">
+<div class="la">所在地区：</div>
+<p style="width:auto;" id="dqlist">
+	<a  href="?did=<?=$did?>&key=<?=$key?>&cityId=&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==false){echo 'focus';}?>">不限</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=2&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==2){echo 'focus';}?>">上海</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=22&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==22){echo 'focus';}?>">江苏</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=1&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==1){echo 'focus';}?>">北京</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=29&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==29){echo 'focus';}?>">广东</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=9&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==9){echo 'focus';}?>">陕西</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=3&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==3){echo 'focus';}?>">天津</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=19&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==19){echo 'focus';}?>">湖北</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=8&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==8){echo 'focus';}?>">山西</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=23&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==23){echo 'focus';}?>">安徽</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=4&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==4){echo 'focus';}?>">重庆</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=27&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==27){echo 'focus';}?>">福建</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=11&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==11){echo 'focus';}?>">甘肃</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=31&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==31){echo 'focus';}?>">广西</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=18&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==18){echo 'focus';}?>">贵州</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=32&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==32){echo 'focus';}?>">海南</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=16&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==16){echo 'focus';}?>">河北</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=20&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==20){echo 'focus';}?>">河南</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=7&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==7){echo 'focus';}?>">黑龙江</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=30&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==30){echo 'focus';}?>">湖南</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=6&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==6){echo 'focus';}?>">吉林</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=25&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==25){echo 'focus';}?>">江西</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=5&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==5){echo 'focus';}?>">辽宁</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=33&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==33){echo 'focus';}?>">内蒙古</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=10&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==10){echo 'focus';}?>">宁夏</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=12&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==12){echo 'focus';}?>">青海</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=21&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==21){echo 'focus';}?>">山东</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=15&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==15){echo 'focus';}?>">四川</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=14&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==14){echo 'focus';}?>">西藏</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=13&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==13){echo 'focus';}?>">新疆</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=17&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==17){echo 'focus';}?>">云南</a>
+	<a href="?did=<?=$did?>&key=<?=$key?>&cityId=24&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($cityId==24){echo 'focus';}?>">浙江</a>
+</p>
+</div>
+
+<div class="lb-a">
+<div class="la">医院科室：</div>
+<p class="selectv" id="kslist">
+<a title="不限" href="?did=&key=&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" data-val="" class="<?php if($key==false){echo 'focus';}?>">不限</a>
+<a href="?did=7f640bba-cff3-11e1-831f-5cf9dd2e7135&key=内科&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='内科'){echo 'focus';}?>">内科</a>
+<a href="?did=7f67b77e-cff3-11e1-831f-5cf9dd2e7135&key=外科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='外科'){echo 'focus';}?>">外科</a>
+<a href="?did=7f67f180-cff3-11e1-831f-5cf9dd2e7135&key=妇产科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='妇产科'){echo 'focus';}?>">妇产科</a>
+<a href="?did=7f689446-cff3-11e1-831f-5cf9dd2e7135&key=肿瘤科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>"class="<?php if($key=='肿瘤科'){echo 'focus';}?>">肿瘤科</a>
+<a href="?did=7f688cb2-cff3-11e1-831f-5cf9dd2e7135&key=皮肤性病科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='皮肤性病科'){echo 'focus';}?>">皮肤性病科</a>
+<a href="?did=7f6802e2-cff3-11e1-831f-5cf9dd2e7135&key=儿科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='儿科'){echo 'focus';}?>">儿科</a>
+<a href="?did=7f68c1d2-cff3-11e1-831f-5cf9dd2e7135&key=中医科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='中医科'){echo 'focus';}?>">中医科</a>
+<a href="?did=7f6848ce-cff3-11e1-831f-5cf9dd2e7135&key=眼科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='眼科'){echo 'focus';}?>">眼科</a>
+<a href="?did=7f687074-cff3-11e1-831f-5cf9dd2e7135&key=口腔科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='口腔科'){echo 'focus';}?>">口腔科</a>
+<a href="?did=7f686908-cff3-11e1-831f-5cf9dd2e7135&key=耳鼻咽喉&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='耳鼻咽喉'){echo 'focus';}?>">耳鼻咽喉</a>
+<a href="?did=7f686b7e-cff3-11e1-831f-5cf9dd2e7135&key=头颈科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='头颈科'){echo 'focus';}?>">头颈科</a>
+<a href="?did=7f67dd62-cff3-11e1-831f-5cf9dd2e7135&key=骨科&cityId<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=<?=$expertTitle?>" class="<?php if($key=='骨科'){echo 'focus';}?>">骨科</a>
+</p>
+</div>
+
+<div class="lb-a">
+<div class="la">医院等级：</div>
+<p class="selectv" id="djlist">
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=&expertTitle=<?=$expertTitle?>" class="<?php if($hospitalLevel==false){echo 'focus';}?>">不限</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=33&expertTitle=<?=$expertTitle?>" class="<?php if($hospitalLevel==33){echo 'focus';}?>">三级甲等</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=30&expertTitle=<?=$expertTitle?>" class="<?php if($hospitalLevel==30){echo 'focus';}?>">三级医院</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=20&expertTitle=<?=$expertTitle?>" class="<?php if($hospitalLevel==20){echo 'focus';}?>">二级医院</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=10&expertTitle=<?=$expertTitle?>" class="<?php if($hospitalLevel==10){echo 'focus';}?>">一级医院</a></p>
+</div>
+
+<div class="lb-a">
+<div class="la">医生职称：</div>
+<p class="selectv" id="zclist">
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=" class="<?php if($expertTitle==false){echo 'focus';}?>">不限</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=1" class="<?php if($expertTitle==1){echo 'focus';}?>">主任医师</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=3" class="<?php if($expertTitle==3){echo 'focus';}?>">副主任医师</a>
+<a href="?did=<?=$did?>&key=<?=$key?>&cityId=<?=$cityId?>&hospitalLevel=<?=$hospitalLevel?>&expertTitle=2" class="<?php if($expertTitle==2){echo 'focus';}?>">主治医师</a></p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="lb-1r" style="display: none;">
+</div>
+</div>
+
+<div class="lb-2">
+<?php foreach($doctor as $v){ ?>
+<div class="lb-2a">
+	<div class="lb-2aa">
+
+	<div class="zh-zj">
+		<div class="zja"><a href="/h_<?=$v['hospitalId']?>/<?=$v['deptId']?>/<?=$v['id']?>/" ><img src="<?php if($v['photoUrl']){echo "{$v['photoUrl']}";}else{echo "<?=IMGURL?>static/home/images/doc-unknow-l.png";}?>"  width="95" onerror="this.src='<?=IMGURL?>static/home/images/doc-unknow-l.png'"/></a></div>
+		<div class="zjb"><a href="/h_<?=$v['hospitalId']?>/<?=$v['deptId']?>/<?=$v['id']?>/" ><?=$v['name']?></a><?=$v['title']?> <?=$v['specialtitle']?></div>
+		<div class="zjc">
+		<p class="picfen">
+		<?php
+		$fen = ($v['score']/2);
+		$ffen = floor($v['score']/2);
+		for($i=0;$i<5;$i++){if($i<$ffen){echo "<font class=\"star1\"></font>";}elseif($ffen<$fen && $ffen==$i){echo "<font class=\"star2\"></font>";}else{echo "<font class=\"star3\"></font>";}}  ?>
+		</p><span><?=$v['score']?>分/<a href="http://www.guahao.com/expertcomment/commentlist?expertId=<?=$v['id']?>" rel="nofollow"><?=$v['evaluteNum']?>人</a></span></div>
+		<div class="zjd"><span>所属医院：</span><a href="/h_<?=$v['hospitalId']?>/" ><?=$v['hospitalName']?></a></div>
+		<div class="zjd"><span>医院等级：</span><?=$v['hospitalLevel']?></div>
+		<div class="zjd"><span>所属科室：</span><a href="http://www.guahao.com/department/<?=$v['deptId']?>" rel="nofollow"><?=$v['deptName']?></a> </div>
+		<div class="zje"><a href="http://www.guahao.com/expert/<?=$v['id']?>" rel="nofollow"><img src="<?=IMGURL?>static/home/img/shlb_131213_18.jpg" width="84" height="26" alt="约门诊" title="约门诊" /></a></div>
+	</div>
+	</div>
+	<div class="lb-2ab" >
+	<p ><span>擅长：</span><?=$v['specialty']?></p>
+	</div>
+</div>
+<?php } ?>
+</div>
+<div class="page" id="pagebar1">
+<?php if($page){echo $page;}?>
+</div>
+<?php Yaf_Loader::import(PATH_VIEW . '/include/from.phtml');?>
+</div>
+<p class="clr"></p>
+<!--foot-->
+<?php Yaf_Loader::import(PATH_VIEW . '/include/foot.phtml');?>
+<!--end foot-->
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* CSS Document */
+*{font-family: 微软雅黑}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td { padding: 0; margin: 0;}
+fieldset, img { border: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+ol, ul {list-style: none;}
+address, caption, cite, code, dfn, em, th, var {font-weight: normal;font-style: normal;}
+caption, th {text-align: left;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;font-size: 100%;float:left;display:inline;}
+p:before, q:after {content: '';}
+abbr, acronym { border: 0;}
+a{text-decoration:none; color:#1d1d1d;}
+a:hover{text-decoration:underline;}
+.clr {	HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden}
+BODY {	FONT-SIZE: 12px; color:#000;}
+.main,.foot,.head{width:954px;overflow:hidden; margin:0 auto;}
+img{ vertical-align:bottom}
+
+/*head*/
+.hd-1{ float:left; width:100%; overflow:hidden; margin-top:1px; background:#efebef; height:22px}
+.hd-1 img{ float:left; width:154px; overflow:hidden}
+.hd-1 p{ float:right; width:760px; overflow:hidden; padding-right:12px; height:22px; line-height:22px; text-align:right; font-size:12px; color:#000}
+.hd-1 p a{ font-size:12px; color:#000; margin:0px 2px}
+.hd-1 p a:hover{ color:#c60}
+.hd-1 p span a{ color:#f00}
+
+.hd-2{ float:left; width:100%; overflow:hidden; margin-top:23px}
+.logo{ float:left; width:273px; overflow:hidden; display:inline; margin-left:19px; margin-top:2px}
+.hd-2 form{ float:left; display:inline; width:457px; height:42px; overflow:hidden; background:url(../img/shindex_131213_3.jpg) no-repeat; margin-left:40px; margin-top:5px}
+.hd-2 .txt{ float:left; display:inline; width:328px; height:20px; line-height:20px; overflow:hidden; border:none; background:none; font-size:14px; color:#999; margin-left:44px; margin-top:11px}
+.hd-2 .bt{ float:left; display:inline; width:68px; height:34px; overflow:hidden; border:none; background:url(../img/shindex_131213_4.jpg) no-repeat; margin-left:12px; margin-top:4px; cursor:pointer}
+.hd-2 span{ float: left; display:inline; width:108px; overflow:hidden; margin-left:30px}
+
+.hd-3{ float:right; width:618px; height:20px; line-height:20px; overflow:hidden;}
+.hd-3 a{ font-size:12px; color:#999; margin-right:15px}
+.hd-3 a:hover{ color:#c60}
+
+.hd-4{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_6.jpg) repeat-x; height:40px; margin-top:13px}
+.hd-4 ul{ float:right; width:946px; overflow:hidden}
+.lsa1{ float:left; width:73px; text-align:center; height:36px; line-height:36px; overflow:hidden; background:url(../img/shindex_131213_7.jpg) no-repeat}
+.lsa1 a{ font-size:14px; color:#fff}
+.lsb1{ float:left; width:87px; text-align:center; height:36px; line-height:36px; overflow:hidden;font-size:14px; color:#fff;}
+.lsb1 a{ font-size:14px; color:#fff}
+.hd-4 .gd{ float:left; display:inline; width:2px; background:url(../img/shindex_131213_8.jpg) no-repeat; height:17px; margin:10px 9px 0px; overflow:hidden}
+
+/*foot*/
+.foot{ border-top:1px #333 solid; margin:10px auto 0px; padding:8px 0px 26px; line-height:24px; text-align:center; font-size:12px; color:#333}
+
+.star1{ float:left;background:url(../images/guahao_03.gif) left top no-repeat; height:14px; width:14px; margin-top:3px; overflow:hidden;}
+.star2{ float:left;background:url(../images/guahao_03.gif) left -15px no-repeat; height:14px; width:14px; margin-top:3px; overflow:hidden;}
+.star3{ float:left;background:url(../images/guahao_03.gif) left -30px no-repeat; height:14px; width:14px; margin-top:3px; overflow:hidden;}
+.score{ font-size:12px; font-weight:normal; line-height:20px;}
+
+
+
+.clear,.area,.pp,.pt{zoom:1}
+.show{display:block;}
+.hidden{display:none;}
+.pp,.pt,.list12 ul,.list14 ul,.area{width:100%;margin:0 auto;}
+.pp:after,.pt:after,.area:after,.clear:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
+.pp{text-align:center;}
+.pp img{display:block;margin:0 auto;}	/*组图内图片属性*/
+.pp span{display:block;}
+.pt{color:#666;line-height:20px;text-align:left;}
+.pt div{float:left;margin:0 10px 0 0;}			/*图文混排*/
+.pt p{clear:none}
+/* 文字列表属性 */
+.list14 li,.list12 li{padding:3px 0;color:#333;font-size:12px;line-height:16px;text-align:left;}
+.list14 li{padding:4px 0;font-size:14px;}
+/* 浮动属性 */
+.left,.center,.l,.right,.r{display:inline;float:left;}
+.right,.r{float:right;}
+.fontArial{font-family:'Arial'}
+.b{font-weight:bold;}/* 加粗 */
+.blank5,.blank8{height:5px;font-size:1px;}
+.blank8{height:8px;}
+.more{text-align:right;}/* 更多 */
+.area{width:950px;}/*页面属性 */
+li.nodot{background:none!important;padding-left:0px!important;}/* 去掉列表前缀 */
+/* 标准头 */
+#indexNav,#channelNav{height:22px;margin:4px auto;background:#fff;color:#000;text-align:left;}
+#channelNav{background:#EFEBEF;}
+#indexNav ul,#channelNav ul{padding-right:6px;}
+#indexNav li,#channelNav li{float:left;margin:5px auto 0;padding:0 2px 0 0;line-height:14px;}
+#indexNav .end,#channelNav .end{padding-right:0;}
+#indexNav .red a,#channelNav .red a{color:#f00;}
+#indexNav a,#channelNav a{color:#000;}
+/* 标准底 */
+#foot{width:950px;margin:5px auto 0;padding:5px 0 10px;border-top:1px solid #333;color:#333;line-height:22px;}
+
+.wz-5ra span a:hover{ text-decoration:none;}
+
+/*文章导航*/
+.jibing { border: 1px solid #D6E6F6;height: 255px;margin:10px 0px;float: left;}
+.jb_t {	height: 32px;line-height: 30px;margin: 0 0 10px;}
+.jb_t>a {-moz-border-bottom-colors: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none; border-color: #fff #fff #D6E6F6;border-image: none; border-style: solid;border-width: 1px;color: #000; display: block;float: left; font-family: "幼圆"; font-size: 14px;font-weight: bold;height: 29px;text-align: center; width: 66px;}
+.jb ul li {background: rgba(0, 0, 0, 0) url("../images/sy0604_57.jpg") no-repeat scroll left center;display: inline;float: left;font-family: "微软雅黑";font-size: 14px;height: 40px;line-height: 40px;margin: 0 0 0 15px;padding: 0 0 0 10px;width: 440px; overflow: hidden;text-overflow: ellipsis;text-overflow: ellipsis;list-style-type: none;}
+.jb ul li span { float: right;}
+.jb ul li a {color: #5a5a5a;text-decoration: none;}
+.jb_t a.kjy_a{ border:1px solid #1091CF;}

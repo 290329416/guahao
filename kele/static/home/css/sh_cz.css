@@ -1,0 +1,104 @@
+/* CSS Document */
+.zh-st{ float:left; width:100%; overflow:hidden; margin-top:12px; text-align:center}
+
+.zh-1{float:left; width:100%; overflow:hidden; margin-top:13px; }
+.zh-1l{ float: left; width:281px; height:458px; overflow:hidden; background:url(../img/shlb_131213_54.jpg) no-repeat}
+.zh-1r{ float: left; width:669px; height:457px; overflow:hidden; background:url(../img/shlb_131213_56.jpg) no-repeat}
+.zh-1la{ float:left;width:200px; overflow:hidden; height:28px; line-height:28px; font-size:18px; font-weight:bold; color:#aace30; display:inline; margin-top:11px; margin-left:15px}
+.zh-1la a{font-size:18px; font-weight:bold; color:#1390c7}
+.zh-1l ul{ float:right; width:272px; overflow:hidden}
+.ls_a1{ float:left; width:272px; overflow:hidden; background:url(../img/shlb_131213_55.jpg) no-repeat; height:33px; cursor:pointer}
+.ls_a1 span{ float:right; width:260px; overflow:hidden; line-height:33px; height:33px; font-size:14px; color:#b1b1b1}
+.ls_a1 span a{ font-size:14px; font-weight:bold; color:#333}
+.ls_b1{ float:left; width:260px;overflow:hidden;display:inline; margin-left:12px; border-bottom:1px #d2ecf8 dashed; height:33px; line-height:33px}
+.ls_b1 span{ float:right; width:260px; overflow:hidden; line-height:32px; height:32px; font-size:14px; color:#b1b1b1}
+.ls_b1 span a{ font-size:14px; font-weight:bold; color:#333}
+
+.zh-1ra{ float:left; display:inline; width:612px; overflow:hidden; margin:6px 0px 0px 23px; border-bottom:1px #f4f4f4 solid; padding-bottom:2px}
+.zh-1rn{ float:left; width:305px; overflow:hidden}
+.zh-1rn span{ float:left; width:100%; overflow:hidden; height:20px; line-height:20px;}
+.zh-1rn span a{ font-size:13px; color:#333; font-weight:bold; margin-left:5px}
+.zh-1rn span a:hover{ color:#c60}
+.zh-1rn p{ float:left; width:300px; overflow:hidden; line-height:23px; height:46px; font-size:12px; color:#666}
+.zh-1rn p a{ font-size:12px; color:#666; margin:0px 5px}
+.zh-1rn p a:hover{ color:#c60}
+
+.zh-2l{ float:left; width:678px; overflow:hidden; background: url(../img/shindex_131213_25.jpg) repeat-y }
+.zh-2la{ float:left; width:100%; overflow:hidden; background: url(../img/shindex_131213_24.jpg) no-repeat top }
+.zh-2lc{ float:left; width:644px; display:inline; border-bottom:1px #d1eaf6 solid; margin-left:17px; margin-top:11px; padding-bottom:4px}
+.zh-2lc span{ float: left; width:auto; height:28px; line-height:28px; overflow:hidden; font-size:18px; font-weight:bold; color:#1390c7}
+.zh-2lc span a{ font-size:18px; font-weight:bold; color:#aace30}
+.zh-2lc p{ float:right; width:auto; height:28px; line-height:28px; overflow:hidden}
+.zh-2lc p a{ font-size:16px; font-weight:bold; color:#52aed6}
+.zh-2lc p a:hover{ color:#c60}
+
+.zh-2lb{ float:left;width:100%; overflow:hidden; background: url(../img/shindex_131213_26.jpg) no-repeat bottom; padding-bottom:11px}
+.zh-2a{  height:22px;overflow:hidden; float:left; width:644px; display:inline; border-bottom:1px #d1eaf6 solid; margin-left:17px; margin-top:4px; padding-bottom:2px}
+.zh-2a span{float:left; width:auto; height:22px; line-height:22px; font-size:12px; color:#666}
+.zh-2a ul{ float:left; width:auto; overflow:hidden}
+.ls_a2{ float:left; width:auto; display:inline; height:22px; line-height:22px; margin-right:6px}
+.ls_a2 a{ font-size:12px; font-weight:bold; color:#333}
+.ls_b2{float:left; width:auto; display:inline; height:22px; line-height:22px; margin-right:6px} 
+.ls_b2 a{ font-size:12px; color:#666}
+.zh-2a p{ float:left; width:12px; overflow:hidden; margin-top:5px; display:inline; margin-left:4px}
+.zh-2b{ float:left; display:inline; width:636px; overflow:hidden; border-bottom:1px #e6e6e6 dashed; padding-bottom:10px; margin:10px 0px 0px 21px}
+.zha{ float:left; width:76px; overflow:hidden; border:1px #d7edf7 solid}
+.zh-2b ul{ float:left; display:inline; width:188px; overflow:hidden; margin-left:18px; height:63px}
+.zh-2b li{ float:left; width:185px; line-height:21px; height:21px; overflow:hidden; font-size:12px; color:#767676}
+.zh-2b li a{ font-size:12px; font-weight:bold; color:#333}
+.zh-2b li a:hover{ color:#c60}
+.zhb{ float:left; width:56px; height:22px; line-height:22px; overflow:hidden; font-size:12px; color:#343434; margin-top:20px}
+.zhc{ float:left; width:82px; height:22px; line-height:22px; overflow:hidden; font-size:12px; color:#7e7e7e; margin-top:20px; display:inline; margin-left:10px}
+.zhd{ float:left; display:inline; width:78px; margin-left:4px; margin-top:23px}
+.zhe{ float:left; width:auto; height:22px; line-height:22px; overflow: hidden; margin-top:20px; font-size:12px; font-weight:bold; color:#316ac5}
+.zhf{ float:right;width:76px; overflow:hidden; margin-top:20px}
+
+.zh-2r{ float:right; width:262px; overflow:hidden; background:url(../img/shindex_131213_21.jpg) repeat-y}
+.zh-2ra{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_20.jpg) no-repeat top}
+.zh-2ra span{ float:left; display:inline; width:auto; height:28px; line-height:28px; margin-top:12px; margin-left:17px; font-size:18px; font-weight: bold; color:#aace30}
+.zh-2ra span a{ font-size:18px; font-weight:bold; color:#1390c7}
+.zh-2rb{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_22.jpg) no-repeat bottom; padding-bottom:16px}
+.zh-2rb ul{ float:right; width:245px; overflow:hidden; margin-top:10px; height:270px}
+.zh-2rb li{ float:left; width:217px; padding-left:12px; height:30px; line-height:30px; overflow:hidden; background:url(../img/shindex_131213_41.jpg) no-repeat 0px 11px; white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.zh-2rb li a{ font-size:14px; color:#666}
+.zh-2rb li a:hover{ color:#c60}
+
+.ls_a3{ float:left; width:auto; display:inline; height:22px; line-height:22px; margin-right:6px}
+.ls_a3 a{ font-size:12px; font-weight:bold; color:#333}
+.ls_b3{float:left; width:auto; display:inline; height:22px; line-height:22px; margin-right:6px} 
+.ls_b3 a{ font-size:12px; color:#666}
+
+.zh-2c{ float:left; display:inline; width:636px; overflow:hidden; border-bottom:1px #e6e6e6 dashed; padding-bottom:10px; margin:8px 0px 0px 21px}
+.zsa{ float:left; width:44px;border:1px #d7edf7 solid; overflow:hidden;height:50px;}
+.zsb{ float:left; display:inline; width:108px; overflow:hidden; margin-left:15px; margin-top:5px}
+.zsb span{ float:left; width:100%; overflow:hidden; height:20px; line-height:20px; font-size:12px; font-weight:bold; color:#333}
+.zsb p{ float:left; width:101px; overflow:hidden; height:20px; line-height:20px; font-size:12px; color:#767676}
+.zsc{ float:left; display:inline; width:297px; overflow:hidden; margin-left:14px; margin-top:5px}
+.zsc p{ float:left; width:290px; overflow:hidden; height:21px; line-height:21px; font-size:12px; color:#000}
+.zsc p span{ color:#767676}
+.zsd{ float:left; display:inline; width:7px; margin-left:5px}
+.zse{ float:right; width:120px; overflow:hidden}
+.zse span{ float:left; width:100%; overflow:hidden; line-height:20px; height:20px; font-size:12px; color:#7f7f7f; margin-top:3px}
+.zse span img{ float:right;}
+.zse p{ float:left; width:197px; overflow:hidden; line-height:20px; height:20px; font-size:12px; color:#3469c5; margin-top:2px}
+.zse p img{ float: left; margin-top:2px}
+
+.zh-2rc{ float:left; width:100%; overflow:hidden; background:url(../img/shindex_131213_22.jpg) no-repeat bottom; padding-bottom:16px}
+.zh-zj{ float:left; display:inline; width:224px; overflow:hidden; margin:12px 0px 0px 19px; border-bottom:1px #d7edf7 solid; padding-bottom:6px}
+.zh-zj img{ float:left; width:64px; overflow:hidden}
+.zh-zj span{ float:right; width:140px; height:20px; line-height:20px; overflow:hidden; font-size:12px; color:#767676}
+.zh-zj span a{ font-weight:bold; color:#333; font-weight:bold; margin-right:6px}
+.zh-zj ul{ float:right; width:140px; overflow:hidden; height:48px;}
+.zh-zj li{ float:left; width:137px; height:24px; line-height:24px; overflow:hidden; font-size:12px; color:#767676}
+.zh-zj p{ float:left; width:221px; line-height:23px; height:69px; overflow:hidden; font-size:12px; color:#767676}
+#slips3,#slips2{float:left; width:560px;overflow:visible;}
+#slips3,#slips2 a{width:40px;float:left; display:inline; height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:0px; font-size:12px; color:#7f7f7f;padding:0px 1px;text-align: center}
+#slips3,#slips2 .focus{ float:left; display:inline;  height:20px; line-height:20px; overflow:hidden; cursor:pointer; margin-right:0px; font-size:12px; color:#fff; background:#2397cb; padding:0px 1px}
+.zy-c{ float:left; display:inline; width:40px; height:20px; line-height:20px; overflow:hidden; background:url(../img/shindex_131213_32.jpg) no-repeat center right; cursor:pointer; margin-left:7px; font-size:12px; color:#c7c7c7}
+.zy-a{ float:left; display:inline; width:auto; height:22px; line-height:22px; overflow:hidden; font-size:12px; color:#1c86b6;margin-right:5px;}
+.zse p{float:left;width:auto;}
+
+
+
+
+
